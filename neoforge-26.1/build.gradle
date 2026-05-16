@@ -1,0 +1,28 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.+'
+}
+
+neoForge {
+    version = "26.1.0.1-beta"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    flatDir {
+        dirs '../../RarityCoreSpace/raritycore26.1/build/libs'
+    }
+}
+
+dependencies {
+    implementation project(':common')
+    implementation "org.yanbwe:raritycore:2601.13.0"
+}
+
+jar {
+    from(project(':common').sourceSets.main.output) {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}

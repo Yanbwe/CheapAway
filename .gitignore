@@ -1,0 +1,16 @@
+.gradle/
+build/
+run/
+out/
+.idea/
+*.iml
+*.ipr
+*.iws
+classes/
+bin/
+gen/
+.DS_Store
+Thumbs.db
+AGENTS.md
+.tmp
+.vscode

@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+issueTrackerURL=""
+
+[[mods]]
+modId="cheapaway"
+version="1.0.0"
+displayName="CheapAway"
+logoFile=""
+credits="Yanbwe"
+authors="Yanbwe"
+description='''
+CheapAway - 基于稀有度的物品拾取过滤和背包批量丢弃功能
+'''
+
+[[dependencies.cheapaway]]
+    modId="raritycore"
+    mandatory=true
+    versionRange="[1.0.0,)"
+    ordering="NONE"
+    side="BOTH"
